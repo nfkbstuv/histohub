@@ -34,18 +34,18 @@ def bg():
 
 
 def f():
- fpoly = pg.Rect(0, 1038, 794, 519)
+ fpoly = pygame.Rect((0, 1038, 794, 519))
  rect(s, ochre, fpoly)
- aaline(s, black, [133, 1038], [133, 519])
- aaline(s, black, [266, 1038], [266, 519])
- aaline(s, black, [399, 1038], [399, 519])
- aaline(s, black, [532, 1038], [532, 519])
- aaline(s, black, [665, 1038], [665, 519])
- aaline(s, black, [0, 519], [794, 519])
+ aaline(s, black, [[133, 1038], [133, 519]])
+ aaline(s, black, [[266, 1038], [266, 519]])
+ aaline(s, black, [[399, 1038], [399, 519]])
+ aaline(s, black, [[532, 1038], [532, 519]])
+ aaline(s, black, [[665, 1038], [665, 519]])
+ aaline(s, black, [[0, 519], [794, 519]])
 
 
 def g():
- gpoly = pg.Rect(0, 519, 794, 519)
+ gpoly = pygame.Rect((0, 519, 794, 519))
  rect(s, green, gpoly)
  
  
@@ -58,16 +58,16 @@ def dhdraw():
  ch()
 
 def roof():
- polygon(s, sy, [500, 500], [570, 480], [550, 550])
- aalines(s, black, True, [500, 500], [570, 250], [550, 550])
- polygon(s, sy, [550, 550], [570, 480], [600, 500], [560, 570])
- aalines(s, black, True, [550, 550], [570, 480], [600, 500], [560, 570])
+ polygon(s, sy, [[500, 500], [570, 480], [550, 550]])
+ aalines(s, black, True, [[500, 500], [570, 250], [550, 550]])
+ polygon(s, sy, [550, 550], [[570, 480], [600, 500], [560, 570]])
+ aalines(s, black, True, [[550, 550], [570, 480], [600, 500], [560, 570]])
 
 def sq():
- polygon(s, sy, [500, 500], [500, 300], [570, 250], [570, 480])
- aalines(s, black, True, [500, 500], [500, 300], [570, 250], [570, 480])
- polygon(s, sy, [570, 480], [570, 250], [600, 310], [600, 500])
- aalines(s, black, True, [570, 480], [570, 250], [600, 310], [600, 500])
+ polygon(s, sy, [[500, 500], [500, 300], [570, 250], [570, 480]])
+ aalines(s, black, True, [[500, 500], [500, 300], [570, 250], [570, 480]])
+ polygon(s, sy, [[570, 480], [570, 250], [600, 310], [600, 500]])
+ aalines(s, black, True, [[570, 480], [570, 250], [600, 310], [600, 500]])
  circle(s, black, (540, 400), 40)
 
 def ch():
