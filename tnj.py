@@ -175,7 +175,7 @@ finished = False
 while not finished:
     clock.tick(FPS)
     for event in pygame.event.get():
-        if event.type == pg.QUIT:
+        if event.type == pygame.QUIT:
             finished = True
 
 pygame.quit()
