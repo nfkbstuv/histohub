@@ -85,7 +85,7 @@ def sq():
 
 def ch():
  arc(s, chgray, (525, 810, 25, 11), 0, 2*math.pi)
- ellipse(s, gray, (515, 811, 17, 20), 0, 2*math.pi)
+ ellipse(s, gray, (515, 811, 17, 20))
  arc(s, chgray, (515, 811, 17, 20), 0, 2*math.pi)
  arc(s, chgray, (503, 824, 25, 20), 0, 2*math.pi)
  arc(s, chgray, (489, 839, 26, 10), 0, 2*math.pi)
@@ -111,7 +111,7 @@ def body():
 
 def corpus():
  ellipse(s, brown, (209, 803, 112, 70))
- ellipse(s, browm, (91, 819, 169, 97))
+ ellipse(s, brown, (91, 819, 169, 97))
 
 def legs():
  leg1()
