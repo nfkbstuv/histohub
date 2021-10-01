@@ -85,7 +85,7 @@ def sq():
 
 def ch():
  arc(s, chgray, (525, 810, 25, 11), 0, 2*math.pi)
- ellipse(s, gray, (515, 811, 17, 20), 0, 2*math*pi)
+ ellipse(s, gray, (515, 811, 17, 20), 0, 2*math.pi)
  arc(s, chgray, (515, 811, 17, 20), 0, 2*math.pi)
  arc(s, chgray, (503, 824, 25, 20), 0, 2*math.pi)
  arc(s, chgray, (489, 839, 26, 10), 0, 2*math.pi)
