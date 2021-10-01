@@ -22,10 +22,12 @@ black = (0, 0, 0)
 
 
 def main():
+  """Вызывает функцию рисования картинки"""
  draw_tnj()
  
  
 def draw_tnj():
+  """Выывает все функции для рисования картинки"""
  bg()
  f()
  g()
@@ -34,10 +36,12 @@ def draw_tnj():
 
 
 def bg():
+  """Рисует фон(небо)"""
  s.fill(blue)
 
 
 def f():
+  """Рисует забор"""
  fpoly = pygame.Rect((0, 175, 794, 463))
  rect(s, ochre, fpoly)
  aaline(s, fline, [50, 175], [50, 638])
@@ -58,11 +62,13 @@ def f():
 
 
 def g():
+  """Рисует траву"""
  gpoly = pygame.Rect((0, 638, 794, 485))
  rect(s, green, gpoly)
  
  
 def dh():
+  """Рисует собачью конуру"""
  dhdraw()
 
 def dhdraw():
@@ -71,12 +77,14 @@ def dhdraw():
  ch()
 
 def roof():
+  """Рисует крышу конуры"""
  polygon(s, oroof, [[503, 680], [643, 714], [578, 586]])
  aalines(s, black, True, [[503, 680], [643, 714], [578, 586]])
  polygon(s, oroof, [[578, 586], [643, 714], [687, 669], [626, 560]])
  aalines(s, black, True, [[578, 586], [643, 714], [687, 669], [626, 560]])
 
 def sq():
+  """Рисует непосредственно здание конуры с входным отверстием"""
  polygon(s, sy, [[503, 680], [503, 824], [643, 897], [643, 714]])
  aalines(s, black, True, [[503, 680], [503, 824], [643, 897], [643, 714]])
  polygon(s, sy, [[643, 714], [643, 897], [687, 800], [687, 669]])
@@ -84,6 +92,7 @@ def sq():
  circle(s, black, (562, 779), 45)
 
 def ch():
+  """Рисует цепь"""
  arc(s, chgray, (525, 810, 25, 11), 0, 2*math.pi)
  ellipse(s, gray, (515, 811, 17, 20))
  arc(s, chgray, (515, 811, 17, 20), 0, 2*math.pi)
@@ -99,50 +108,61 @@ def ch():
   
 
 def d():
+  """Вызывает функцию для рисования собаки"""
  ddraw()
 
 def ddraw():
+  """Рисует собаку"""
  body()
  head()
 
 def body():
+  """Рисует тело собаки"""
  corpus()
  legs()
 
 def corpus():
+  """Рисует корпус тела собаки"""
  ellipse(s, brown, (209, 803, 112, 70))
  ellipse(s, brown, (91, 819, 169, 97))
 
 def legs():
+  """Рисует ноги собаки"""
  leg1()
  leg2()
  leg3()
  leg4()
 
 def leg1():
+  """Рисует левую переднюю ногу собаки"""
  ellipse(s, brown, (68, 852, 55, 111))
  ellipse(s, brown, (55, 959, 58, 21))
 
 def leg2():
+  """Рисует правую переднюю ногу собаки"""
  ellipse(s, brown, (160, 892, 56, 98))
  ellipse(s, brown, (147, 987, 52, 19))
 
 def leg3():
+  """Рисует левую заднюю ногу собаки"""
  ellipse(s, brown, (212, 803, 40, 74))
  ellipse(s, brown, (254, 869, 18, 49))
  ellipse(s, brown, (227, 916, 40, 18))
  
 def leg4():
+  """Рисует правую заднюю ногу собаки"""
  ellipse(s, brown, (278, 835, 72, 97))
  ellipse(s, brown, (323, 885, 18, 64))
  ellipse(s, brown, (295, 946, 41, 20))
 
 def head():
+  """Рисует голову собаки"""
  facenears()
  eyes()
  mouth()
 
 def facenears():
+  """Рисует голову и уши собаки без глаз и рта"""
  polygon(s, brown, [[80, 777], [81, 893], [187, 893], [187, 777]])
  aalines(s, black, True, [[80, 777], [81, 893], [187, 893], [187, 777]])
  ellipse(s, brown, (63, 779, 30, 35))
@@ -151,6 +171,7 @@ def facenears():
  arc(s, black, (171, 778, 30, 35), 0, 2*math.pi)
 
 def eyes():
+  """Рисует глаза собаки"""
  ellipse(s, white, (100, 818, 23, 9))
  arc(s, black, (100, 818, 23, 9), 0, 2*math.pi)
  ellipse(s, black, (106, 818, 9, 7))
@@ -159,6 +180,7 @@ def eyes():
  ellipse(s, black, (149, 818, 9, 7))
 
 def mouth():
+  """Рисует рот собаки с клыками"""
  arc(s, black, (100, 858, 67, 20), 0, math.pi)
  polygon(s, white, [[105, 868], [113, 861], [108, 850]])
  aalines(s, black, True, [[105, 868], [113, 861], [108, 850]])
