@@ -1,2 +1,2 @@
 # histohub
-py pie
+py pie pi
