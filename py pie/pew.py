@@ -10,7 +10,6 @@ canv.pack(fill=BOTH, expand=1)
 colors = ['red', 'orange', 'yellow', 'blue', 'green', 'black']
 ax = rnd(-10, 10)
 ay = rnd(-10, 10)
-b = set()
 points = 0
 
 
