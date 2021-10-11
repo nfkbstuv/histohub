@@ -1,6 +1,5 @@
 from tkinter import *
 from random import randrange as rnd, choice
-import time
 
 root = Tk()
 root.geometry('800x600')
@@ -8,9 +7,17 @@ root.geometry('800x600')
 canv = Canvas(root, bg='white')
 canv.pack(fill=BOTH, expand=1)
 colors = ['red', 'orange', 'yellow', 'blue', 'green', 'black']
-ax = rnd(-10, 10)  # Диапазон изменения координаты х шарика при движении
-ay = rnd(-10, 10)  # Диапозон изменения координаты у шарика при движении
 points = 0
+
+
+def mball():
+    """ Функция, отвечающая за движение шарика
+
+    'Летящая стрела неподвижна, так как в каждый момент она покоится,
+    а поскольку она покоится в каждый момент времени, то она покоится всегда'
+
+    """
+    pass
 
 
 def new_ball():
